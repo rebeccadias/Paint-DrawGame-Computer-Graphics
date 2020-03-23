@@ -36,26 +36,36 @@ void ds(int jump)
 	 t++;
 	}
 	window (2,15-t,18,25);
-	 cprintf("                 ");
-	 cprintf("         ÜÛßÛÛÛÛÜ");
-	 cprintf("         ÛÛÛÛÛÛÛÛ");
-	 cprintf("         ÛÛÛÛÛßßß");
-	 cprintf(" Û      ÜÛÛÛÛßßß ");
-	 cprintf(" ÛÛÜ  ÜÛÛÛÛÛÛÜÜÜ ");
-	 cprintf(" ßÛÛÛÛÛÛÛÛÛÛÛ  ß ");
-	 cprintf("   ßÛÛÛÛÛÛÛß     ");
+    cprintf("         ????");
+  // gotoxy(2,17-t);
+    cprintf("         ????");
+    //gotoxy(2,18-t);
+    cprintf("         ????");
+   // gotoxy(2,19-t);
+    cprintf(" ?     ???? ");
+   // gotoxy(2,20-t);
+    cprintf(" ?? ????? ");
+   // gotoxy(2,21-t);
+    cprintf(" ??????  ?");
+   // gotoxy(2,22-t);
+    cprintf("   ?????    ");
+
 	 if(jump==1 || jump==2){
-	 cprintf("    ÛÛß ßÛ       ");
-	 cprintf("    ÛÜ   ÛÜ      ");
+
+    cprintf("    ???       ");
+    //gotoxy(2,24-t);
+    cprintf("    ?   ?      ");
 	 }//if
 	 else if(a==1){
-	 cprintf("    ßÛÛß  ßßß    ");
-	 cprintf("      ÛÜ         ");
+    cprintf("    ??  ??   ");
+    //gotoxy(2,24-t);
+    cprintf("      ?         ");
 	 a=2;
 	}//else if a=1
 	  else if(a==2){
-    cprintf("     ßÛÜ ßÛ      ");
-    cprintf("          ÛÜ     ");
+    cprintf("     ???      ");
+   // gotoxy(2,24-t);
+    cprintf("          ?     ");
     a=1;
     } //else if a=2
 
@@ -121,8 +131,8 @@ void main()
 	    obj();
 	    }
 	}
-	//else if (ch=='x')
-	  //  return(0);
+	else if (ch=='x')
+	  break;
     } 
 
 
